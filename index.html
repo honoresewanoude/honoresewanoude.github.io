@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Honoré Mitchozounnou - Cybersécurité</title>
+<title>Honoré Mitchozounnou Cybersécurité</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -33,7 +33,7 @@
     cursor: none;
   }
 
-  /* -- CURSOR -- */
+  /* ── CURSOR ── */
   #cursor {
     width: 12px; height: 12px;
     background: var(--accent);
@@ -56,7 +56,7 @@
   }
   body:hover #cursor { opacity: 1; }
 
-  /* -- SCANLINES overlay -- */
+  /* ── SCANLINES overlay ── */
   body::before {
     content: '';
     position: fixed; inset: 0;
@@ -64,7 +64,7 @@
     pointer-events: none; z-index: 1000;
   }
 
-  /* -- NAV -- */
+  /* ── NAV ── */
   nav {
     position: fixed; top: 0; width: 100%; z-index: 500;
     display: flex; justify-content: space-between; align-items: center;
@@ -91,7 +91,7 @@
   }
   .nav-links a:hover { color: var(--accent); }
 
-  /* -- HERO -- */
+  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex; align-items: center;
@@ -252,7 +252,7 @@
     color: var(--text);
   }
 
-  /* -- SECTIONS -- */
+  /* ── SECTIONS ── */
   section {
     padding: 6rem 4rem;
     position: relative;
@@ -279,7 +279,7 @@
     background: var(--border);
   }
 
-  /* -- SKILLS -- */
+  /* ── SKILLS ── */
   #skills { background: var(--surface); }
 
   .skills-grid {
@@ -369,7 +369,7 @@
     box-shadow: 0 0 8px var(--accent2);
   }
 
-  /* -- PROJECTS -- */
+  /* ── PROJECTS ── */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -454,7 +454,7 @@
   .term-line.cmd { color: var(--accent); }
   .term-line.cmd::before { content: '$ '; color: var(--accent3); }
 
-  /* -- EXPERIENCE -- */
+  /* ── EXPERIENCE ── */
   #experience { background: var(--surface); }
 
   .timeline {
@@ -509,7 +509,7 @@
     line-height: 1.6;
   }
   .timeline-points li::before {
-    content: '▸';
+    content: '>';
     position: absolute; left: 0;
     color: var(--accent);
     font-size: 0.7rem;
@@ -519,7 +519,7 @@
     margin: 0.8rem 0;
   }
 
-  /* -- CONTACT -- */
+  /* ── CONTACT ── */
   #contact {
     text-align: center;
     padding: 8rem 4rem;
@@ -581,7 +581,7 @@
     box-shadow: 0 4px 20px var(--glow);
   }
 
-  /* -- FOOTER -- */
+  /* ── FOOTER ── */
   footer {
     border-top: 1px solid var(--border);
     padding: 1.5rem 4rem;
@@ -591,7 +591,7 @@
     color: var(--muted);
   }
 
-  /* -- SCROLL ANIMATIONS -- */
+  /* ── SCROLL ANIMATIONS ── */
   .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -602,7 +602,7 @@
     transform: translateY(0);
   }
 
-  /* -- TYPEWRITER -- */
+  /* ── TYPEWRITER ── */
   .typewriter::after {
     content: '|';
     animation: blink 0.8s infinite;
@@ -613,7 +613,7 @@
     50% { opacity: 0; }
   }
 
-  /* -- GLITCH -- */
+  /* ── GLITCH ── */
   .glitch {
     position: relative;
   }
@@ -644,7 +644,88 @@
     100% { transform: translateX(-2px); }
   }
 
-  /* Progress tracker */
+  /* ── SITES WEB ── */
+  #sites { background: var(--bg); }
+
+  .sites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .site-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px));
+  }
+  .site-card:hover {
+    border-color: var(--accent2);
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 var(--accent2);
+  }
+
+  .site-preview {
+    height: 160px;
+    background: linear-gradient(135deg, #0a1628 0%, #0f2040 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .site-preview::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,212,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  .site-preview-icon {
+    font-size: 3rem;
+    position: relative; z-index: 1;
+    filter: drop-shadow(0 0 20px var(--accent));
+  }
+  .site-preview-label {
+    position: absolute; bottom: 0.7rem; right: 0.8rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .site-info { padding: 1.4rem 1.6rem; }
+  .site-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: var(--text);
+  }
+  .site-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .site-techs { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+  .site-link {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--accent2);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(0,255,157,0.3);
+    padding-bottom: 2px;
+    transition: all 0.2s;
+  }
+  .site-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .site-link::after { content: ' '; }
   #progress-bar {
     position: fixed; top: 0; left: 0; height: 2px;
     background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -675,6 +756,7 @@
   <div class="nav-links">
     <a href="#skills">Compétences</a>
     <a href="#projects">Projets</a>
+    <a href="#sites">Mes Sites</a>
     <a href="#experience">Expérience</a>
     <a href="#contact">Contact</a>
   </div>
@@ -683,7 +765,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-content">
-    <div class="hero-tag">Disponible - Alternance Sept. 2026</div>
+    <div class="hero-tag">Disponible Alternance Sept. 2026</div>
     <h1 class="hero-title">
       <span class="line1">Honoré</span>
       <span class="line2 glitch" data-text="MITCHOZOUNNOU">MITCHOZOUNNOU</span>
@@ -692,12 +774,12 @@
       <span id="typewriter" class="typewriter"></span>
     </div>
     <div class="hero-cta" style="margin-bottom:1.5rem;">
-      <a href="#projects" class="btn-primary"> Voir mes projets</a>
+      <a href="#projects" class="btn-primary">↓ Voir mes projets</a>
       <a href="mailto:honoresewanoude@gmail.com" class="btn-outline">✉ Me contacter</a>
     </div>
     <div class="status-badge">
       <span class="status-dot"></span>
-      ESIEA Laval · BTS CIEL · 22 ans · Tarbes
+      ESIEA Laval BTS CIEL 22 ans Tarbes
     </div>
   </div>
 
@@ -819,6 +901,22 @@
         <div class="skill-bar"><div class="skill-bar-fill" data-width="65"></div></div>
       </div>
     </div>
+
+    <div class="skill-card reveal">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">Développement Web</div>
+      <div class="skill-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">PHP</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive design</span>
+      </div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-label"><span>Maîtrise</span><span>72%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="72"></div></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -833,8 +931,8 @@
   <div class="projects-grid">
 
     <div class="project-card reveal" data-num="01">
-      <div class="project-type">SIEM · Détection</div>
-      <div class="project-title">Déploiement d'un SIEM Wazuh - Détection d'incidents en temps réel</div>
+      <div class="project-type">SIEM Détection</div>
+      <div class="project-title">Déploiement d'un SIEM Wazuh<br><span style="color:var(--accent);font-size:0.85em;">Détection d'incidents en temps réel</span></div>
       <div class="project-desc">Mise en place d'un environnement complet de supervision sécurité avec corrélation d'événements, détection de brute force et alertes automatisées.</div>
       <div class="project-stack">
         <span class="tag">Wazuh</span>
@@ -845,16 +943,16 @@
       </div>
       <div class="terminal">
         <div class="term-line cmd">wazuh-manager status</div>
-        <div class="term-line"><span>✔</span> Manager actif · 4 agents connectés</div>
-        <div class="term-line"><span>✔</span> HIDS actif · Kerberos · Brute force</div>
+        <div class="term-line"><span>✔</span> Manager actif 4 agents connectés</div>
+        <div class="term-line"><span>✔</span> HIDS actif Kerberos Brute force</div>
         <div class="term-line cmd">alert latency</div>
-        <div class="term-line"><span style="color:var(--accent2)">→ Détection : &lt; 30 secondes</span></div>
+        <div class="term-line"><span style="color:var(--accent2)">Détection : &lt; 30 secondes</span></div>
       </div>
     </div>
 
     <div class="project-card reveal" data-num="02">
-      <div class="project-type">NDR · Réseau · Virtualisation</div>
-      <div class="project-title">Lab Réseau Virtualisé — Sécurité avancée (NDR)</div>
+      <div class="project-type">NDR Réseau Virtualisation</div>
+      <div class="project-title">Lab Réseau Virtualisé<br><span style="color:var(--accent);font-size:0.85em;">Sécurité avancée (NDR)</span></div>
       <div class="project-desc">Architecture réseau multi-VLAN complète sous VMware avec IDS/IPS réseau, moteur NDR et mini-environnement attaque/défense intégré.</div>
       <div class="project-stack">
         <span class="tag">VMware</span>
@@ -865,15 +963,15 @@
       </div>
       <div class="terminal">
         <div class="term-line cmd">zeek -i eth0 local.zeek</div>
-        <div class="term-line"><span>✔</span> NDR actif · Analyse L2/L3</div>
-        <div class="term-line"><span style="color:var(--accent3)">!</span> ARP spoofing détecté · Alerté</div>
-        <div class="term-line"><span style="color:var(--accent3)">!</span> Scan Nmap bloqué · Suricata DROP</div>
+        <div class="term-line"><span>✔</span> NDR actif Analyse L2/L3</div>
+        <div class="term-line"><span style="color:var(--accent3)">!</span> ARP spoofing détecté Alerté</div>
+        <div class="term-line"><span style="color:var(--accent3)">!</span> Scan Nmap bloqué Suricata DROP</div>
       </div>
     </div>
 
     <div class="project-card reveal" data-num="03">
-      <div class="project-type">Active Directory · Attaque / Défense</div>
-      <div class="project-title">Environnement Active Directory - Simulation d'attaques</div>
+      <div class="project-type">Active Directory Attaque / Défense</div>
+      <div class="project-title">Environnement Active Directory<br><span style="color:var(--accent);font-size:0.85em;">Simulation d'attaques</span></div>
       <div class="project-desc">Déploiement d'un domaine Windows Server complet avec simulation d'attaques réelles, analyse des journaux d'événements et durcissement via GPO.</div>
       <div class="project-stack">
         <span class="tag">Windows Server 2019</span>
@@ -884,7 +982,7 @@
       </div>
       <div class="terminal">
         <div class="term-line cmd">Get-EventLog Security -Newest 10</div>
-        <div class="term-line"><span style="color:var(--accent3)">4625</span> Failed logon · RDP brute force</div>
+        <div class="term-line"><span style="color:var(--accent3)">4625</span> Failed logon RDP brute force</div>
         <div class="term-line"><span style="color:var(--accent3)">4740</span> Account locked out</div>
         <div class="term-line"><span>✔</span> GPO durcissement appliquée</div>
       </div>
@@ -896,16 +994,16 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-header reveal">
-    <span class="section-num">03</span>
+    <span class="section-num">05</span>
     <h2 class="section-title">Parcours</h2>
     <div class="section-line"></div>
   </div>
 
   <div class="timeline">
     <div class="timeline-item reveal">
-      <div class="timeline-period">SEPT. 2024 → PRÉSENT</div>
-      <div class="timeline-role">BTS CIEL - Cybersécurité, Informatique, Réseaux, Électronique</div>
-      <div class="timeline-company">Lycée Saint Pierre · Tarbes, France</div>
+      <div class="timeline-period">SEPT. 2024 PRÉSENT</div>
+      <div class="timeline-role">BTS CIEL Cybersécurité, Informatique, Réseaux, Électronique</div>
+      <div class="timeline-company">Lycée Saint Pierre Tarbes, France</div>
       <div class="tech-stack-inline">
         <span class="tag">CCNA en cours</span>
       </div>
@@ -930,16 +1028,80 @@
     </div>
 
     <div class="timeline-item reveal">
-      <div class="timeline-period">2022 → 2024</div>
-      <div class="timeline-role">Licence 1 & 2 - Informatique Réseaux & Télécommunications</div>
-      <div class="timeline-company">ESGIS · Cotonou, Bénin</div>
+      <div class="timeline-period">2022   2024</div>
+      <div class="timeline-role">Licence 1 & 2 Informatique Réseaux & Télécommunications</div>
+      <div class="timeline-company">ESGIS Cotonou, Bénin</div>
     </div>
 
     <div class="timeline-item reveal">
       <div class="timeline-period">2022</div>
-      <div class="timeline-role">Baccalauréat Scientifique - Mathématiques</div>
-      <div class="timeline-company">CEG Ikpinlè · Bénin</div>
+      <div class="timeline-role">Baccalauréat Scientifique Mathématiques</div>
+      <div class="timeline-company">CEG Ikpinlè Bénin</div>
     </div>
+  </div>
+</section>
+
+<!-- SITES WEB -->
+<section id="sites">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Mes Sites Web</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="sites-grid">
+
+    <div class="site-card reveal">
+      <div class="site-preview">
+        <div class="site-preview-icon">🌐</div>
+        <div class="site-preview-label">HTML CSS PHP</div>
+      </div>
+      <div class="site-info">
+        <div class="site-name">Site 1 À remplacer</div>
+        <div class="site-desc">Description de ton projet web. Remplace ce texte par ce que le site fait réellement.</div>
+        <div class="site-techs">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">PHP</span>
+        </div>
+        <a href="https://ton-lien-site-1.com" target="_blank" class="site-link">Voir le site</a>
+      </div>
+    </div>
+
+    <div class="site-card reveal">
+      <div class="site-preview">
+        <div class="site-preview-icon">🛒</div>
+        <div class="site-preview-label">HTML CSS JS</div>
+      </div>
+      <div class="site-info">
+        <div class="site-name">Site 2 À remplacer</div>
+        <div class="site-desc">Description de ton projet web. Remplace ce texte par ce que le site fait réellement.</div>
+        <div class="site-techs">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <a href="https://ton-lien-site-2.com" target="_blank" class="site-link">Voir le site</a>
+      </div>
+    </div>
+
+    <div class="site-card reveal">
+      <div class="site-preview">
+        <div class="site-preview-icon">📊</div>
+        <div class="site-preview-label">PHP MySQL</div>
+      </div>
+      <div class="site-info">
+        <div class="site-name">Site 3 À remplacer</div>
+        <div class="site-desc">Description de ton projet web. Remplace ce texte par ce que le site fait réellement.</div>
+        <div class="site-techs">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">CSS3</span>
+        </div>
+        <a href="https://ton-lien-site-3.com" target="_blank" class="site-link">Voir le site</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -959,11 +1121,11 @@
 
 <footer>
   <span>© 2025 Honoré Sèwanoudé Mitchozounnou</span>
-  <span>Cybersécurité · Alternance 2026</span>
+  <span>ESIEA Laval Cybersécurité Alternance 2026</span>
 </footer>
 
 <script>
-// -- Cursor --
+// ── Cursor ──
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursor-ring');
 let mx = 0, my = 0, rx = 0, ry = 0;
@@ -1000,19 +1162,19 @@ document.querySelectorAll('a, button, .skill-card, .project-card, .tag').forEach
   });
 });
 
-// -- Progress bar --
+// ── Progress bar ──
 const pb = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
   const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
   pb.style.width = pct + '%';
 });
 
-// -- Typewriter --
+// ── Typewriter ──
 const phrases = [
   "Ingénieur Cybersécurité en alternance",
-  "Détection d'intrusions · SIEM · NDR",
+  "Détection d'intrusions SIEM NDR",
   "Administration Systèmes & Réseaux",
-  "Wazuh · Suricata · Active Directory",
+  "Wazuh Suricata Active Directory",
 ];
 let pi = 0, ci = 0, deleting = false;
 const tw = document.getElementById('typewriter');
@@ -1040,7 +1202,7 @@ function type() {
 }
 type();
 
-// -- Scroll reveal --
+// ── Scroll reveal ──
 const reveals = document.querySelectorAll('.reveal');
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
@@ -1051,7 +1213,7 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 reveals.forEach(r => obs.observe(r));
 
-// -- Skill bars --
+// ── Skill bars ──
 const barObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1063,7 +1225,7 @@ const barObs = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 document.querySelectorAll('.skill-card').forEach(c => barObs.observe(c));
 
-// -- Particle burst on click --
+// ── Particle burst on click ──
 document.addEventListener('click', e => {
   for (let i = 0; i < 6; i++) {
     const p = document.createElement('div');
