@@ -410,7 +410,7 @@
     <!-- 01 SIEM Wazuh (featured) -->
     <div class="project-card featured reveal" data-num="01" data-category="siem">
       <div class="project-type cat-siem">SIEM · SOC · Détection temps réel</div>
-      <div class="project-title">Plateforme SOC — Déploiement Wazuh + Suricata + Zeek<br>
+      <div class="project-title">Plateforme SOC - Déploiement Wazuh + Suricata + Zeek<br>
         <span style="color:var(--accent);font-size:.85em;">Détection d'incidents &lt; 30 secondes</span>
       </div>
       <div class="project-desc">Environnement complet de supervision sécurité multi-VM : manager Wazuh avec agents Windows (Sysmon) et Ubuntu, IDS réseau Suricata, analyse de flux L2/L3 avec Zeek. Simulation d'attaques réelles depuis Kali Linux avec corrélation d'alertes, scoring CVSS et génération automatique de rapports d'incidents en Python. MCO de la plateforme : résolution d'un incident de saturation disque (extension LVM, purge logs, reconfiguration alerting SMTP/Postfix).</div>
@@ -418,10 +418,10 @@
         <span class="tag">Wazuh</span><span class="tag">Suricata</span><span class="tag">Zeek</span><span class="tag">Sysmon</span><span class="tag">Kali Linux</span><span class="tag">Python</span><span class="tag">VMware</span><span class="tag">Ubuntu</span><span class="tag">Windows 11</span>
       </div>
       <ul class="project-highlights">
-        <li>Détection brute force RDP, ARP spoofing, scans Nmap — alertes corrélées en temps réel</li>
-        <li>Règles de détection personnalisées + scoring CVSS — évaluation de criticité</li>
+        <li>Détection brute force RDP, ARP spoofing, scans Nmap - alertes corrélées en temps réel</li>
+        <li>Règles de détection personnalisées + scoring CVSS - évaluation de criticité</li>
         <li>Automatisation Python : génération de rapports d'incidents structurés depuis les alertes SIEM</li>
-        <li>MCO réel : saturation disque VM Ubuntu → diagnostic, extension LVM à chaud, reconfiguration Postfix</li>
+        <li>MCO réel : saturation disque VM Ubuntu --> diagnostic, extension LVM à chaud, reconfiguration Postfix</li>
       </ul>
       <div class="terminal">
         <div class="term-line cmd">wazuh-manager status</div>
@@ -437,7 +437,7 @@
     <div class="project-card reveal" data-num="02" data-category="reseau">
       <div class="project-type cat-reseau">Réseau · Firewall · Virtualisation</div>
       <div class="project-title">Infrastructure Réseau Multi-VLAN Sécurisée<br>
-        <span style="color:var(--accent);font-size:.85em;">Lab VMware — Architecture LAN/DMZ/Serveurs</span>
+        <span style="color:var(--accent);font-size:.85em;">Lab VMware - Architecture LAN/DMZ/Serveurs</span>
       </div>
       <div class="project-desc">Conception et déploiement d'une topologie réseau segmentée (5 VLANs : LAN, Serveurs, DMZ, Management, Quarantaine) sous VMware. Routage inter-VLAN OSPF, redondance HSRP, VPN site-à-site simulé. Intégration d'un pare-feu Stormshield en coupure LAN/DMZ avec filtrage stateful, NAT source/destination et analyse via Wireshark.</div>
       <div class="project-stack">
@@ -468,8 +468,8 @@
         <span class="tag">Windows Server 2019</span><span class="tag">AD DS</span><span class="tag">DNS/DHCP</span><span class="tag">GPO</span><span class="tag">PowerShell</span><span class="tag">Kali Linux</span>
       </div>
       <ul class="project-highlights">
-        <li>Scripts PowerShell d'audit de conformité : GPO, comptes actifs/inactifs, services — rapports structurés</li>
-        <li>Simulation brute force RDP, Kerberoasting — analyse events 4625/4740</li>
+        <li>Scripts PowerShell d'audit de conformité : GPO, comptes actifs/inactifs, services - rapports structurés</li>
+        <li>Simulation brute force RDP, Kerberoasting - analyse events 4625/4740</li>
         <li>Hardening : désactivation services non nécessaires, politique MDP robuste, gestion des droits</li>
       </ul>
       <div class="terminal">
@@ -491,8 +491,8 @@
         <span class="tag">GitLab CI</span><span class="tag">Docker</span><span class="tag">Ansible</span><span class="tag">Python</span><span class="tag">pyVmomi</span><span class="tag">Wazuh</span><span class="tag">Bandit</span><span class="tag">Git</span>
       </div>
       <ul class="project-highlights">
-        <li>Pipeline CI : build image Docker → scan vulnérabilités Bandit → déploiement Ansible automatisé</li>
-        <li>Portail web Python : choix OS/CPU/RAM → clone de template ESXi via API VMware</li>
+        <li>Pipeline CI : build image Docker --> scan vulnérabilités Bandit --> déploiement Ansible automatisé</li>
+        <li>Portail web Python : choix OS/CPU/RAM --> clone de template ESXi via API VMware</li>
         <li>Conteneurisation Wazuh-agent Docker pour déploiement versionné et reproductible</li>
         <li>Approche NetDevOps : Ansible + Netmiko sur 8 équipements virtuels (VLAN, ACL, SNMP)</li>
       </ul>
@@ -515,7 +515,7 @@
         <span class="tag">VMware</span><span class="tag">Wazuh</span><span class="tag">Suricata</span><span class="tag">Stormshield</span><span class="tag">NIS2</span><span class="tag">ANSSI</span><span class="tag">IEC 62443</span><span class="tag">Cisco IOS</span>
       </div>
       <ul class="project-highlights">
-        <li>5 zones Purdue : ACL strictes, filtrage par zone — prévention mouvements latéraux</li>
+        <li>5 zones Purdue : ACL strictes, filtrage par zone - prévention mouvements latéraux</li>
         <li>Audit NIS2 : gap analysis, plan d'action (chiffrement flux, durcissement accès automates)</li>
         <li>Tableau de bord de conformité réglementaire temps réel via Wazuh</li>
         <li>Simulation architecture OT avec points de contrôle alignés IEC 62443</li>
@@ -532,14 +532,14 @@
     <div class="project-card reveal" data-num="06" data-category="siem">
       <div class="project-type cat-siem">Tests · Validation · Recette IDS</div>
       <div class="project-title">Plateforme de Validation de Règles de Sécurité<br>
-        <span style="color:var(--accent);font-size:.85em;">Approche Cahier de Recette — 100% SIDs validées</span>
+        <span style="color:var(--accent);font-size:.85em;">Approche Cahier de Recette - 100% SIDs validées</span>
       </div>
       <div class="project-desc">Environnement de test isolé (3 VMs) reproduisant une infrastructure client pour valider des règles IDS avant mise en production. Scripts Python automatisant l'injection de trafic simulé et comparant les alertes attendues vs générées. Résultat : 100% des règles IDS custom (dont SID 1000001) validées hors production, zéro faux positif en déploiement.</div>
       <div class="project-stack">
         <span class="tag">Python</span><span class="tag">Ansible</span><span class="tag">Wazuh</span><span class="tag">Suricata</span><span class="tag">VMware</span><span class="tag">Wireshark</span>
       </div>
       <ul class="project-highlights">
-        <li>Scripts Python d'injection de trafic simulé — comparaison alertes attendues vs générées</li>
+        <li>Scripts Python d'injection de trafic simulé - comparaison alertes attendues vs générées</li>
         <li>Segmentation VLAN dédiée supervision + règles Stormshield pour contrôle d'accès exploitants</li>
         <li>Déploiement agents Wazuh via Ansible sur 6 nœuds (Linux/Windows) avec habilitations centralisées</li>
         <li>SID 1000001 validée end-to-end · 0 faux positif en production</li>
@@ -613,9 +613,9 @@
 
   <div class="timeline">
     <div class="timeline-item reveal">
-      <div class="timeline-period">SEPT. 2026 — JUIL. 2029</div>
+      <div class="timeline-period">SEPT. 2026 - JUIL. 2029</div>
       <div class="timeline-role">Cycle Ingénieur Réseaux & Cybersécurité</div>
-      <div class="timeline-company">École Supérieure d'Ingénieurs de Rennes (ESIR) — Rennes</div>
+      <div class="timeline-company">École Supérieure d'Ingénieurs de Rennes (ESIR) - Rennes</div>
       <div class="tech-stack-inline">
         <span class="tag">Alternance 1 mois/1 mois</span>
         <span class="tag">Spécialité Cybersécurité & Cloud</span>
@@ -624,8 +624,8 @@
     </div>
 
     <div class="timeline-item reveal">
-      <div class="timeline-period">SEPT. 2024 — PRÉSENT</div>
-      <div class="timeline-role">BTS CIEL — Cybersécurité, Informatique, Réseaux, Électronique</div>
+      <div class="timeline-period">SEPT. 2024 - PRÉSENT</div>
+      <div class="timeline-role">BTS CIEL - Cybersécurité, Informatique, Réseaux, Électronique</div>
       <div class="timeline-company">Lycée Saint Pierre, Tarbes, France</div>
       <div class="tech-stack-inline">
         <span class="tag">CCNA 200-301 en cours de finalisation</span>
@@ -634,7 +634,7 @@
 
     <div class="timeline-item reveal">
       <div class="timeline-period">2024</div>
-      <div class="timeline-role">Stage Technicien Réseaux & Sécurité — 6 semaines</div>
+      <div class="timeline-role">Stage Technicien Réseaux & Sécurité - 6 semaines</div>
       <div class="timeline-company">Anthea Informatique, Tarbes</div>
       <div class="tech-stack-inline">
         <span class="tag">Cisco IOS</span>
@@ -644,8 +644,8 @@
         <span class="tag">VMware</span>
       </div>
       <ul class="timeline-points">
-        <li>Déploiement et paramétrage d'un pare-feu Stormshield : règles de filtrage, NAT, VPN IPsec — intervention directe en datacenter client</li>
-        <li>Configuration de switches Cisco : VLAN 802.1Q, trunking, DHCP Snooping, DAI — câblage et rack d'équipements</li>
+        <li>Déploiement et paramétrage d'un pare-feu Stormshield : règles de filtrage, NAT, VPN IPsec - intervention directe en datacenter client</li>
+        <li>Configuration de switches Cisco : VLAN 802.1Q, trunking, DHCP Snooping, DAI - câblage et rack d'équipements</li>
         <li>Déploiement Active Directory : intégration de 24 postes, gestion utilisateurs, permissions et GPO</li>
         <li>Rédaction de procédures d'exploitation et documents d'architecture technique remis au client</li>
         <li>Gestion de tickets d'incidents via Codial : identification, résolution, documentation</li>
@@ -653,13 +653,13 @@
     </div>
 
     <div class="timeline-item reveal">
-      <div class="timeline-period">2022 — 2024</div>
+      <div class="timeline-period">2022 - 2024</div>
       <div class="timeline-role">Licence 1 & 2 Informatique Réseaux & Télécommunications</div>
       <div class="timeline-company">ESGIS, Cotonou, Bénin</div>
     </div>
 
     <div class="timeline-item reveal">
-      <div class="timeline-period">2021 — 2022</div>
+      <div class="timeline-period">2021 - 2022</div>
       <div class="timeline-role">Baccalauréat Scientifique Mathématiques</div>
       <div class="timeline-company">CEG Ikpinlè, Bénin</div>
     </div>
@@ -712,7 +712,7 @@
   <div class="contact-label reveal">Recruteurs & RH</div>
   <h2 class="contact-title reveal">Travaillons ensemble.</h2>
   <p class="contact-sub reveal">
-    Futur ingénieur ESIR Rennes — je recherche une alternance de 36 mois à partir de septembre 2026 (1 mois entreprise / 1 mois école) pour sécuriser votre infrastructure IT.
+    Futur ingénieur ESIR Rennes - je recherche une alternance de 36 mois à partir de septembre 2026 (1 mois entreprise / 1 mois école) pour sécuriser votre infrastructure IT.
   </p>
   <div class="contact-links reveal">
     <a href="mailto:honoresewanoude@gmail.com" class="contact-link">✉ honoresewanoude@gmail.com</a>
